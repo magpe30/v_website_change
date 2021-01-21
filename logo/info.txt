@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: acherus_grotesque_-_regular
+font link: https://www.fontsquirrel.com/fonts/acherus-grotesque
+font author: Horizon Type Foundry
+font author site: https://www.behance.net/horizontype
+Slogan Font: Questrial-Regular.otf
+
+icon designer: Robin Richards
+icon designer link: /robin16
+        
+{"bg":"transparent","icon-gradient-0":"#E90DCA","icon-gradient-1":"#1536F1","font":"#000000","slogan":"#141414"}
+      
