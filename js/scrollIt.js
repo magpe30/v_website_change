@@ -19,10 +19,10 @@
         upKey: 38,
         downKey: 40,
         easing: 'linear',
-        scrollTime: 600,
+        scrollTime: 100,
         activeClass: 'active',
         onPageChange: null,
-        topOffset : 0
+        topOffset : 3
     };
 
     $.scrollIt = function(options) {

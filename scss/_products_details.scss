@@ -1,21 +1,29 @@
 .portfolio_details_banner{
-    background: #1F1F1F;
-    padding-top: 220px;
-    padding-bottom: 470px;
+    background: $logo_crimson;
+    padding-top: 200px;
+    padding-bottom: 450px;
     @media #{$mobile_device}{
-        padding: 100px 0;
+        padding: 100px 0 50px 0;
     }
     .details_info{
         h3{
-            font-size: 78px;
-            font-weight: 400;
+            font-size: 90px;
+            font-weight: 900;
+            line-height: 90px;
             color: #fff;
-            text-align: center;
             margin-bottom: 62px;
             @media #{$mobile_device} {
                 font-size: 30px;
                 margin-bottom: 30px;
             }
+        }
+        p{
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            font-family: $font1;
+            font-weight: 100;
+            color: #FFF;
         }
         .details_links{
             @media #{$mobile_device} {
@@ -27,38 +35,18 @@
                     margin-bottom: 30px;
                 }
                 span{
-                    color: #C9C9C9;
-                    font-size: 12px;
-                    font-weight: 400;
-                    display: block;
-                    margin-bottom: 9px;
-                    font-family: $font2;
+                    width: 50px;
+                    height: 50px;
+                    background: $logo_blue_light;
                 }
                 h4{
-                    font-family: $font2;
-                    font-size: 16px;
-                    font-weight: 400;
+                    font-family: $font1;
+                    font-size: 15px;
+                    font-weight: 300;
+                    text-transform: uppercase;
                     color: #fff;
                 }
-                .social_links{
-                    ul{
-                        li{
-                            display: inline-block;
-                            margin-right: 21px;
-                            @media #{$mobile_device}{
-                                margin: 0 5px;
-                            }
-                            a{
-                                color: #fff;
-                                font-size: 16px;
-
-                                &:hover{
-                                    color: #615CFD;
-                                }
-                            }
-                        }
-                    }
-                }
+               
             }
         }
     }
@@ -95,6 +83,79 @@
             img{
                 width: 100%;
             }
+        }
+    }
+}
+.video_batching{
+    padding: 122px 0 0 0;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1345px;
+    .video_batching_text{
+        span{
+            text-transform: uppercase;
+            color: $logo_blue_light;
+        }
+        h1{
+            font-weight: 900;
+            @media #{$tablet_device}, #{$mobile_device}{
+                padding-bottom: 30px;
+            }
+        }
+    }
+    .batching_row{
+        display: flex;
+    }
+    .video_batching_item{
+        display: flex;
+        margin: 0 25px 30px 25px;;
+        i{
+            margin-right: 20px;
+            font-size: 25px;
+            color: $logo_blue_light;
+        }
+        .item_text{
+            h2{
+                font-size: 25px;
+                font-weight: 800;
+                font-family: $font1;
+            }
+            p{
+                color: #000;
+            }
+        }
+    }
+}
+.video_abbreviation{
+    background: $gray-color-2;
+}
+.products_img_divider{
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    img{
+        margin: 0 auto;
+        @media #{$tablet_device}, #{$mobile_device}{
+            width: 100%;
+        }
+    }
+}
+.get_started{
+    background: linear-gradient(to right, $logo_crimson, $logo_pink);
+    color: #FFF;
+    .get_started_text{
+        padding: 100px 0;
+        h3{
+            font-size: 40px;
+            font-weight: 800;
+        }
+        p{
+            color: #FFF;
+            font-size: 20px;
+            font-weight: 200;
+        }
+        a{
+            margin-top: 10px;
         }
     }
 }

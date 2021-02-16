@@ -1,101 +1,179 @@
 // portfolio_image_area 
 .portfolio_image_area{
-    padding-top: 147px;
-    padding-bottom: 130px;
     position: relative;
-    @media #{$mobile_device} {
-        padding-top: 70px;
-        padding-bottom: 40px;
-    }
-    &.dec_margin{
-        margin-top: 0;
-        padding-top: 150px;
-        padding-bottom: 150px;
-        @media #{$mobile_device} {
-            padding: 50px 0; 
-        }
-        @media #{$tablet_device} {
-            padding: 70px 0; 
-        }
-        @media #{$mid_device} {
-            padding: 100px 0; 
-        }
-    }
-    .single_Portfolio{
-        position: relative;
-        margin-bottom: 30px;
-        overflow: hidden;
-        @include border-radius(5px);
-        .portfolio_thumb{
-            height: 350px;
-            @include border-radius(5px);
-            overflow: hidden;
-            @media #{$mobile_device} {
-                height: auto;
-            }
-            img{
-                width: 100%;
-                height: 100%;
-                @include border-radius(5px);
+    background: $section_bg;
+    .section_title{
+        h1{
+            font-weight: 900;
+            font-size: 45px;
+            padding-top: 60px;
+            @media #{$mobile_device}{
+                font-size: 35px;
             }
         }
-        .portfolio_hover{
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
+        p{
+            color: #000;
+            font-size: 20px;
+            font-weight: 200;
+        }
+    }
+    .hidden{
+        width: 150px;
+        margin-bottom: 50px;
+    }
+    
+    .row_portfolio{
+        .wrapper{
+            padding-top:  50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            .social_ads{
+                padding-top: 30px;
+            }
+        }
+        
+        h2{
+            font-weight: 900;
+            font-size: 20px;
+        }
+        .video_container{
+            padding-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            @media #{$tablet_device}{
+                grid-template-columns: 1fr 1fr;
+            }
+            @media #{$mobile_device}{
+                grid-template-columns: 1fr;
+            }
+            .myvideos{
+              width: 90%;
+            }
+        }
+        .btn_area{
+            padding: 50px 0;
+            display: block;
             text-align: center;
-            background: #fff;
-            border: 0;
-            @include transform(scale(.9));
-            @include transition(.5s);
-            opacity: 0;
-            overflow: hidden;
-            @include border-radius(5px);
-            .title{
-                position: absolute;
-                top: 50%;
-                left: 0;
-                right: 0;
-                text-align: center;
-                @include transform(translateY(-50%));
+        }
+    }
+    
+}
+
+
+/*.portfolio_marquee{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    @media #{$mid_device}, #{$tablet_device}, #{$mobile_device}{
+        display: none;
+    }
+
+    .marquee{
+        margin:0;
+        height: 12vh;
+        .marquee_content{
+            height: 100%;
+            display: flex;
+            width: 100vw;
+            animation: scrolling 10s linear infinite;
+            &:hover{
+                animation-play-state:paused
             }
-            span{
-                font-size: 14px;
-                color: #615CFD;
-                font-weight: 400;
-                font-family: $font2;
-            }
-            h3{
-                color: #1F1F1F;
-                font-size:24px ;
-                font-weight: 700;
-                margin-top: 11px;
-                margin-bottom: 25px;
-            }
-            .boxed-btn3{
+            li{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                font-size: 70px;
+                color: #FFF;
+                //color: $theme-color;
+                font-family: $font1;
+                font-weight: 600;
+                flex-shrink: 0;
+                width: 25vw;
+                white-space: nowrap;
+                margin-right: 0px;
                 &:hover{
-                    border: 1px solid #615CFD !important;
-                    color: #615CFD !important;
-                    background: #fff !important;
+                    color: $section_bg;
+                    -webkit-text-stroke: none;
+                    cursor: pointer;
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    height: 3px;
+                    width: 40px;
+                    background-color:$section_bg; 
+                    transform: translateX(-40px);
                 }
             }
         }
-        &:hover .portfolio_hover{
-            @include transform(scale(1));
-            opacity: 1;
-        }
-    }   
-    .more_portfolio{
-        margin-top: 60px;
     }
-    .popup {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 9;
+}
+@keyframes scrolling{
+    0%{
+        transforme: translate(0);
+    }
+    100%{
+        transform: translateX(-100vw);
+    }
+}*/
+.purpose{
+    background:linear-gradient($logo_blue_lighter, $logo_blue_dark);
+    color: #FFF;
+    font-family: $font1;
+}
+.purpose_wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    @media #{$mid-device}, #{$tablet_device}, #{$mobile_device}{
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .purpose_text{
+        margin-left: 200px;
+        cursor: grab;
+        @media #{$mid-device}, #{$tablet_device}, #{$mobile_device}{
+            margin-left:0;
+            text-align: center;
+        }
+        h1{
+            font-weight: 900;
+            font-size: 35px;
+            padding-top: 60px;
+            @media #{$mobile_device}{
+                font-size: 25px;
+            }
+        }
+        .text_container{
+            width: 400px;
+            @media #{$mobile_device}{
+                width: 300px;
+            }
+            p{
+                font-size: 50px;
+                font-family: $font1;
+                color: #FFF;
+                font-weight: 900;
+                background: #000;
+                padding: 10px 5px;
+                @media #{$mobile_device}{
+                    font-size: 30px;
+                }
+            }
+        }
+        
+    }
+    .img_area{
+        margin-left: 20px;
+        @media #{$mid-device}, #{$tablet_device}, #{$mobile_device}{
+            margin-right:0;
+        }
+        img{
+            width: 90%;;
+        }
     }
 }

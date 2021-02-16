@@ -1,7 +1,15 @@
 
 /* 1. Theme default css */
-@import 'varriable';
-@import 'mixins.scss';
+@import '_varriable';
+@import '_mixins.scss';
+html, body {
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	overflow-x: hidden;
+}
+  
 body {
 	font-family: $font1;
 	font-weight: normal;
@@ -37,8 +45,7 @@ button {
 	outline: medium none;
 }
 h1,h2,h3,h4,h5{
-	font-family: $font2;
-	color: #1F1F1F;
+	font-family: $font1;
 }
 h1 a,
 h2 a,
@@ -59,7 +66,7 @@ li {
 p {
 	font-size: 16px;
 	font-weight:400;
-	line-height: 28px;
+	line-height: 30px;
 	color: #727272;
 	margin-bottom: 13px;
 	font-family: $font1;
@@ -111,12 +118,12 @@ h3{
 	font-size: 24px;
 }
 
-.mb-70{
-	margin-bottom: 73px;
-	@media #{$mobile_device} {
-		margin-bottom: 30px;
-	}
-}
+//.mb-70{
+	//margin-bottom: 73px;
+	//@media #{$mobile_device} {
+	//	margin-bottom: 30px;
+	//}
+//}
 // default-bg-color
 .black-bg{
 	background: #020c26 !important;
@@ -148,7 +155,6 @@ h3{
 .overlay::before{
 	position: absolute;
 	content: "";
-	background-color: #1F1F1F;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -164,7 +170,6 @@ h3{
 .overlay2::before{
 	position: absolute;
 	content: "";
-	background-color: #2C2C2C;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -183,7 +188,6 @@ h3{
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: #2C2C2C;
 	opacity: .6;
 	content: '';
 	z-index: -1;

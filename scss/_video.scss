@@ -1,59 +1,82 @@
-.video_area{
-    padding-bottom: 60px;
-    padding-top: 150px;
+/*.video_area{
+    padding-bottom: 100px;
+    padding-top: 100px;
     @media #{$mobile_device}{
         padding-top: 50px;
     }
-    .video_wrap{
-        .thumb{
-            margin-bottom: 70px;
-            position: relative;
-            img{
+    .slider_video{
+        
+        .gradient{
+            width: 1950px;
+            height: 1000px;
+            background:linear-gradient(#000000, #1F1F1F);
+            position: absolute;
+            opacity: 70%;
+            transform:translateY(-50%);
+        }
+        #backVideo{
+            position: absolute;
+            left: 30%;
+            @media #{$mobile_device}{
+                object-fit: cover;
+                object-position: center;
                 width: 100%;
-            }
-            .video_icon a {
-                width: 90px;
-                height: 90px;
-                background: #615CFD;
-                display: inline-block;
-                text-align: center;
-                line-height: 90px;
-                border-radius: 50%;
-                color: #fff;
+                height:100%;
                 position: absolute;
-                top: 50%;
-                left: 50%;
-                @include transform(translate(-50%,-50%));
-                @media #{$mobile_device} {
-                    width: 50px;
-                    height: 50px;
-                    line-height: 47px;
-                }
-                i{
-                    font-size: 16px;
-                    @media #{$mobile_device} {
-                        font-size: 13px;
-                    }
-                }
-            
+                top: 0;
+                margin-top: 0;
+                left: 0;
+                overflow: hidden;
+            }
+        
+        }
+    }
+    .video_watch{
+        display: flex;
+        text-align: center;
+        margin-top: 37px;
+        .play_btn{
+            a{
+                width: 60px;
+                height: 60px;
+                @include border-radius(50%);
+                background: linear-gradient($btn_gradient, $btn_gradient2);
+                font-size: 14px;
+                text-align: center;
+                line-height: 60px;
+                color: #fff;
+                display: inline-block;
+                
             }
         }
-        .video_text{
-            p{
-                font-size: 30px;
-                font-weight: 600;
-                line-height: 42px;
-                color: #001D38;
-                @media #{$mobile_device} {
-                    font-size: 18px;
-                    line-height: 25px;
-                }
-                br{
-                    @media (min-width: 320px) and (max-width: 991px) {
-                        display: none;
-                    }
-                }
-            }
+        p{
+            font-size: 20px;
+            color: #FFF;
+            font-weight: 400;
+            font-family: $font2;
+            margin-left: 20px;
         }
-    }   
+    }
+} 
+}*/
+/*.video_area{
+    padding-bottom: 150px;
+    padding-top: 50px;
+    @media #{$mobile_device}{
+        padding-top: 50px;
+    }
 }
+#backVideo{
+    margin-left: 50vw;
+    transform: translate(-50%);
+    @media #{$mobile_device}{
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        position: absolute;
+        margin-top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+
+}*/

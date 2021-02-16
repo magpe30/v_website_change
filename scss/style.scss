@@ -1,12 +1,21 @@
-
-@import 'varriable.scss';
-@import 'mixins.scss';
-@import 'extend';
-@import 'responsive.scss';
+//for 100%width main page - main changes 
+body {
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	box-sizing: border-box;
+	overflow: visible;
+}
+//imports 
+@import '_varriable.scss';
+@import '_mixins.scss';
+@import '_extend';
+@import '_responsive.scss';
 @import 'theme-default.scss';
-@import 'btn';
-@import 'section_title';
-@import 'slick-nav.scss';
+@import '_btn';
+@import '_slick-nav.scss';
+@import '_slider.scss';
 
 
 
@@ -54,20 +63,20 @@
 
 @import 'getIn_tauch';
 
-@import 'work';
-
 @import 'mission';
 
 @import 'products_details';
 
 
 // other pages default
+//about us page
+@import "_about_us";
 
 // contact
 @import 'contact';
 
 // elements
-@import 'elements.scss';
+@import '_elements.scss';
 
 // blog
 @import 'blog';

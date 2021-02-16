@@ -1,14 +1,6 @@
 .footer{
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
     .footer_top{
         padding-top: 100px;
-<<<<<<< Updated upstream
-        padding-bottom: 160px;
-        background: #1F1F1F;
-=======
         padding-bottom: 100px;
         background: #000;
         display: flex;
@@ -85,7 +77,6 @@
             }
 
         }
->>>>>>> Stashed changes
         @media #{$mobile_device} {
             padding-top: 50px;
             padding-bottom: 30px;
@@ -98,38 +89,10 @@
             padding-top: 100px;
             padding-bottom: 100px;
         }
-        .menu_links{
-            @media #{$mobile_device} {
-                margin-top: 15px;
-            }
-            ul{
-                li{
-                    display: inline-block;
-                    margin-right: 46px;
-                    @media #{$mobile_device} {
-                        margin-right: 10px;
-                    }
-                    @media #{$mid_device} {
-                        margin-right: 30px;
-                    }
-                    @media #{$tablet_device} {
-                        margin-right: 30px;
-                    }
-                    a{
-                        color: #fff;
-                        font-size: 15px;
-                        font-weight: 500;
-                        &:hover{
-                            color:#615CFD ;
-                        }
-                    }
-                }
-            }
-        }
-    }
+    }    
     .copy-right_text{
         padding-bottom: 25px;
-        background:#1F1F1F;
+        background:#000;
         .footer_border{
             border-top: 1px solid #363636;
         }
@@ -142,49 +105,19 @@
                 font-size: 13px;
             }
             a{
-                color: #615CFD;
+                color: $logo_blue_dark;
             }
         }
     }
-    .socail_links{
-        // margin-top: 47px;
-        text-align: right;
-        @media #{$mobile_device} {
-            // margin-top: 30px;
-            text-align: left;
-            margin-top: 30px;
+    .menu_links{
+        display: flex;
+        color: #FFF;
+        img{
+            width: 100px;
         }
-<<<<<<< Updated upstream
-        @media #{$tablet_device} {
-            // margin-top: 30px;
-            text-align: center;
-            margin-top: 30px;
+        a{
+            color: #FFF;
         }
-        ul{
-            li{
-                display: inline-block;
-
-                a{
-                    color: #fff;
-                    width: 40px;
-                    height: 40px;
-                    display: inline-block;
-                    text-align: center;
-                    background: transparent;
-                    @include border-radius(50%);
-                    line-height: 40px !important;
-                    margin-right: 7px;
-                    color: #E7F9F9;
-                    line-height: 40px !important;
-                    border: 1px solid #E7F9F9;
-                    font-size: 14px;
-                 &:hover{
-                     color: #fff !important;
-                     background: #615CFD;
-                     border: 1px solid #615CFD;
-                 }
-                }
-=======
         .footer_link{
             color: #8a8a8a;
             &:hover{
@@ -216,8 +149,18 @@
                 color: #23ACBC;
                 border: 1px solid #23ACBC ;
                 background: transparent;
->>>>>>> Stashed changes
             }
         }
+    }
+}
+@media #{$tablet_device}, #{$mobile_device}{
+    .hidden{
+        display: none;
+    }
+    .footer_links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
     }
 }

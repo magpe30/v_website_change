@@ -1,56 +1,59 @@
-.get_in_tauch_area{
-    padding-top: 146px;
+.get_in_touch{
+    padding-top: 100px;
     padding-bottom: 160px;
-<<<<<<< Updated upstream
-=======
     background: #FFF;
     .get_container{
         display: flex;
         justify-content: center;
     }
->>>>>>> Stashed changes
     @media #{$mobile_device} {
         padding-top: 70px;
         padding-bottom: 70px;
     }
-    .touch_form{
-        .single_input{
-            input,textarea{
-                width: 100%;
-                border: 1px solid #C9C9C9;
-                height: 50px;
-                @include border-radius(30px);
-                padding: 20px 16px;
-                margin-bottom: 25px;
-                font-family: $font2;
-                font-size: 14px;
-                color: #000;
-                font-weight: 400;
-                &::placeholder{
-                    color: #707070;
-                    font-size: 14px;
-                    font-family: $font2;
-                    font-weight: 400;
-                }
-                &:focus{
-                    outline: none;
-                }
-            }
-            textarea{
-                height: 148px;
-                resize: none;
-            }
+    .get_section{
+        display: flex;
+        justify-content: center;
+        @media #{$mid-device}, #{$tablet_device}, #{$mobile_device}{
+            flex-direction: column;
         }
-        .submit_btn{
-            .boxed-btn3{
-                width: 100%;
+        
+        .headline_section{
+            @media #{$mid_device}, #{$tablet_device}, #{$mobile_device}{
                 text-align: center;
             }
+            h1{
+                font-size: 45px;
+                font-weight: 900;
+                @media #{$mobile_device}{
+                    font-size: 30px;
+                }
+            }
+            p{
+                font-size: 20px;
+                font-weight: 200;
+                line-height: 30px;
+                color: #000;
+            }
+        }
+        .img_section{
+           margin-top:-70px;
+           @media #{$mid_device}, #{$tablet_device}, #{$mobile_device}{
+               margin-top: 0;
+               display: flex;
+               justify-content: center;
+           }
+            img{
+                padding-left: 200px;
+                @media #{$mid_device}, #{$tablet_device}, #{$mobile_device}{
+                    width: 90%;
+                    padding-left: 0;
+                }
+           }
+        }
+        button{
+            margin-top: 50px;
         }
     }
-<<<<<<< Updated upstream
-}
-=======
     
 }
 ///Gallery with logos of brands strip////
@@ -95,4 +98,3 @@
         }
     }
 }
->>>>>>> Stashed changes

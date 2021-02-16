@@ -1,13 +1,6 @@
-.slider_bg_1{
-    background-image: url(../img/banner/banner.png);
-}
-.slider_bg_2{
-    background-image: url(../img/banner/banner2.png);
-}
-.slider_area{
-<<<<<<< Updated upstream
 
-=======
+
+.slider_area{
 background: $section_bg;
     font-family: $font1;
     color: #FFF;
@@ -18,26 +11,14 @@ background: $section_bg;
         }
     }
     
->>>>>>> Stashed changes
     .single_slider{
-        position: relative;
-        z-index: 0;
-        height: 900px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-
+        
         @media #{$mobile_device} {
-            height: 500px;
+            //height: 600px;
         }
         @media #{$tablet_device} {
-            height: 620px;
+           // height: 620px;
         }
-        &.about_banner.overlay::before{
-            opacity: .5;
-        }
-<<<<<<< Updated upstream
-=======
         .video-background{
             position: absolute;
             width: 100%;
@@ -48,22 +29,36 @@ background: $section_bg;
             background-image: none;
            
         }
->>>>>>> Stashed changes
         .slider_text{
-            h3{
-                color: #FFF;
-                font-family: $font2;
-                font-size: 78px;
-                font-weight: 400;
-                line-height: 84px;
-                margin-bottom: 54px;
-             span{
-                 font-weight: 700;
-             }
+            margin-top: 200px;
+            margin-bottom: 50px;
+            h1{
+                font-size: 90px;
+                font-weight: 900;
+                line-height: 90px;
+                margin-bottom: 30px;
+                @media #{$mobile_device}{
+                    font-size: 35px;
+                    line-height: 40px;
+                }
+                @media #{$tablet_device}{
+                    font-size: 45px;
+                }
+            }
+            h2{
+                font-size: 30px;
+                padding-bottom: 20px;
+              
+                @media #{$mobile_device}{
+                    font-size: 20px;
+                }
+                @media #{$tablet_device}{
+                    font-size: 25px;
+                }
+            }
              @media #{$mobile_device} {
                font-size: 30px;
             //    letter-spacing: 3px;
-                line-height: 35px;
             }
              @media #{$tablet_device} {
                font-size: 50px;
@@ -75,40 +70,6 @@ background: $section_bg;
                line-height: 55px;
 
             }
-<<<<<<< Updated upstream
-            }
-            span{
-                font-size: 30px;
-                font-weight: 400;
-                color: #FFFFFF;
-                position: relative;
-                z-index: 1;
-                &::before{
-                    position: absolute;
-                    background: #fff;
-                    width: 50px;
-                    height: 2px;
-                    content: '';
-                    left: -67px;
-                    top: 50%;
-                    margin-bottom: -1px;
-                }
-             @media #{$mid_device} {
-                font-size: 16px;
-             }
-             @media #{$mobile_device} {
-                font-size: 16px;
-             }
-            }
-            .video_service_btn> a{
-                margin-right: 15px;
-                @media #{$mobile_device} {
-                    margin-bottom: 20px;
-                }
-            }
-        }
-    } 
-=======
             
         }       
     }
@@ -156,5 +117,4 @@ background: $section_bg;
         }
     }
 
->>>>>>> Stashed changes
 }

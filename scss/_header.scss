@@ -1,10 +1,10 @@
-.header-area{
+/*.header-area{
     position: absolute;
     left: 0;
     right: 0;
     width: 100%;
     top: 0;
-    z-index: 99;
+    z-index: 44;
     @media #{$mobile_device} {
         padding-top: 0;
     }
@@ -15,11 +15,11 @@
         padding: 0 200px;
         @media #{$mobile_device} {
             padding: 10px 10px;
-            background: #1F1F1F;
+            background: #000;
         }
         @media #{$tablet_device} {
             padding: 10px 10px;
-            background: #1F1F1F;
+            background: #000;
         }
         @media #{$mid_device} {
             padding: 0 30px;
@@ -27,38 +27,44 @@
         @media #{$large_device} {
             padding: 0 70px;
         }
-        .logo-img{
+        img{
+            width: 120px;
+            padding: 5px 5px;
             text-align: left;
             @media #{$mobile_device} {
                 text-align: left;
             }
             @media #{$tablet_device} {
-                // padding-left: 20px;
                 text-align: left;
+                padding: 10px 10px;
             }
             @media #{$mid_device} {
-                // padding-left: 20px;
                 text-align: left;
+                padding: 10px 10px;
             }
         }
         .main-menu{
             text-align: center;
+            @media #{$mid_device}{
+                margin-left: 20px;
+            }
+            
             ul{
                 li{
                     display: inline-block;
                     position: relative;
-                    margin: 0 23px;
+                    margin: 0 15px;
                     @media #{$mid_device} {
-                        
+                        margin: 0 10px;
                     }
                     @media #{$large_device} {
-                        
+                        margin: 0 10px;
                     }
                     a{
-                        color: #fff;
-                        font-size: 16px;
+                        color: #000;
+                        font-size: 17px;
                         text-transform: capitalize;
-                        font-weight: 600;
+                        font-weight: 700;
                         display: inline-block;
                         padding: 40px 0;
                         font-family: $font1;
@@ -75,10 +81,10 @@
                         i{
                             font-size: 9px;
                             @media #{$mobile_device}{
-                                display: none !important;
+                                display: none ;
                             }
                             @media #{$tablet_device}{
-                                display: none !important;;
+                                display: none ;
                             }
                         }
                         &.active{
@@ -88,7 +94,7 @@
                             }
                         }
                         &:hover{
-                            color: #615CFD;
+                            color: $logo_crimson;
                         }
                     }
                     .submenu {
@@ -117,7 +123,7 @@
                                 }
                             }
                             &:hover a{
-                                color: #615CFD;
+                                color: $logo_crimson;
                             }
                         }
                     }
@@ -149,32 +155,21 @@
             -webkit-transition: transform 500ms ease, background 500ms ease;
             box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
             // padding: 0px 150px;
-            background: #1F1F1F;
-            // @media #{$mobile_device} {
-            //     padding: 10px 10px;
-            // }
-            // @media #{$tablet_device} {
-            //     padding: 10px 10px;
-            // }
-            // @media #{$mid_device} {
-            //     padding: 0px 20px;
-            // }
-            // @media #{$large_device} {
-            //     padding: 0px 20px
-            // }
+            background: #000;
+           
             .main-menu{
                 padding: 0;
                 ul{
                     li{
                         a{
-                            color: #fff;
+                            color: #FFF;
                         }
                     }
                 }
             }
             .log_chat_area{
                 .say_hi{
-                    color: #fff;
+                    color: #000;
                 }
             }
         }
@@ -183,8 +178,14 @@
     }
     .log_chat_area{
         @include justify-content(flex-end);
+       
+        .active{
+            color: #FFF; 
+            padding: 0 10px 12px 0;
+            font-weight: 800;
+        }
         .say_hi{
-            font-size: 16px;
+            font-size: 15px;
             color: #fff;
             font-weight: 600;
             position: relative;
@@ -197,15 +198,13 @@
                 content: "";
                 height: 3px;
                 width: 100%;
-                background: #615CFD;
+                background: $black_color;
                 bottom: 0;
                 left: 0;
                 
             }
         }
     }
-<<<<<<< Updated upstream
-=======
 }*/
 
 .navbar-scroll{
@@ -251,7 +250,6 @@ a{
         background: transparent;
         border: 1.5px solid $logo_pink;
     }
->>>>>>> Stashed changes
 }
 
 #main_site_item{

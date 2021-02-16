@@ -1,6 +1,92 @@
-.prising_area{
-    padding-top: 170px;
-    padding-bottom: 150px;
+/*.bradcam_area{
+    background-color: $logo_blue_light;
+    background-image: url("../img2/pricing_img3.png");
+    background-position: bottom;
+    padding: 214px 0 150px 0;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    //&::before{
+    //    position: absolute;
+    //   left: 0;
+    //    top: 0;
+    //    width: 100%;
+    //   height: 100%;
+    //    background: #1F1F1F;
+    //    opacity: .5;
+    //   z-index: -1;
+    //    content: '';
+    //}
+    @media #{$mobile_device} {
+        padding: 180px 0;
+    }
+    h1{
+        font-size: 90px;
+        color: #fff;
+        font-weight: 900;
+        margin-bottom: 0;
+        text-transform: capitalize;
+        font-family: $font1;
+        @media #{$mobile_device} {
+            font-size: 30px;
+        }
+    }
+    p{
+        font-size: 18px;
+        color: #fff;
+        font-weight: 400;
+        text-transform: capitalize;
+        a{
+            color: #fff;
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+}*/
+.pricing_content_area{
+    background: linear-gradient($logo_blue_darker, $logo_blue_lighter);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media #{$mid_device}, #{$tablet_device}, #{$mobile_device}{
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+    .pricing_text_area{
+        margin-left: 300px;
+        @media #{$mid_device}, #{$tablet_device}, #{$mobile_device}{
+            margin-left:5px;
+            margin-right: 5px;
+        }
+        h3{
+            color: #FFF;
+            font-weight: 900;
+            font-family: $font1;
+            font-size: 45px;
+            @media #{$tablet_device}, #{$mobile_device}, #{$mid_device}{
+                font-size: 30px;
+                margin-top: 50px;
+            }
+        }
+        p{
+            color: #fff;
+            font-size: 20px;
+            font-weight: 200;
+        }
+    }
+    img{
+        @media #{$tablet_device}, #{$mobile_device}, #{$mid_device}{
+            width: 100%;
+        } 
+    }
+    
+}
+
+.pricing_plan{
+    
+    transform: translateY(-120px);
     &.minus_padding{
         padding-bottom: 0;
     }
@@ -16,10 +102,13 @@
             padding-bottom: 50px;
         }
         h3{
-
+            font-family: $font1;
+            font-weight: 900;
+            font-size: 30px;
         }
         p{
-
+            font-size: 20px;
+            color: #000;
         }
     }
     .single_prising{
@@ -67,14 +156,195 @@
                 }
             }
         }
-        .prising_bottom{
-            a{
+    }
+}
+.wrapper-card {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 40px auto;
+    width: 77%;
+}
+.card {
+    background: #FFF;
+    border-radius: 15px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+    flex: 1;
+    margin: 8px;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+.card.popular {
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+.card.popular .card-title h3 {
+    color: $logo_crimson;
+    font-size: 22px;
+}
+.card.popular .card-price {
+    margin: 50px;
+}
+.card.popular .card-price h1 {
+    color: $logo_pink;
+    font-size: 60px;
+}
+/*.card.popular .card-action button {
+    background-color: $logo_pink;
+    border-radius: 80px;
+    color: #fff;
+    font-size: 17px;
+    margin-top: -15px;
+    padding: 15px;
+    height: 80px;
+}
+.card.popular .card-action button:hover {
+    background-color: #000;;
+    font-size: 23px;
+}*/
+.card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.card-ribbon {
+    position: absolute;
+    overflow: hidden;
+    top: -10px;
+    left: -10px;
+    width: 114px;
+    height: 112px;
+}
+.card-ribbon span {
+    position: absolute;
+    display: block;
+    width: 160px;
+    padding: 10px 0;
+    background-color: $logo_pink;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    left: -35px;
+    top: 25px;
+    transform: rotate(-45deg);
+}
+.card-ribbon::before, .card-ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: 5px solid $logo_pink;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+.card-ribbon::before {
+    top: 0;
+    right: 0;
+}
+.card-ribbon::after {
+    bottom: 0;
+    left: 0;
+}
+.card-title h3 {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.card-title h4 {
+    color: #000;
+}
 
+.card-price h1 {
+    font-size: 46px;
+}
+.card-price h1 sup {
+    font-size: 15px;
+    display: inline-block;
+    margin-left: -20px;
+    width: 10px;
+}
+.card-price h1 small {
+    color: #000;
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.card-description ul {
+    display: block;
+    list-style: none;
+    margin: 60px 0;
+    padding: 0;
+}
+.card-description li {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    margin: 0 0 15px;
+}
+.card-description li::before {
+    font-family: FontAwesome;
+    content: "\f00c";
+    padding: 0 5px 0 0;
+    color: rgba(0, 0, 0, 0.15);
+}
+.card-action button {
+    background: transparent;
+    border: 2px solid $logo_pink;
+    border-radius: 30px;
+    color: $logo_pink;
+    cursor: pointer;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px;
+    width: 100%;
+    height: 60px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+/////FAQ/////////////
+.faq_section{
+    background: $gray-color-2;
+    color: #000;
+    max-width: 1780px;
+    margin: 100px auto 0 auto;
+    .faq_text{
+        padding: 50px 0;
+        h1{
+            font-weight: 900;
+        }
+    }
+    .single_faq{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        @media #{$tablet_device}, #{$mobile_device}, #{$mid_device}{
+            flex-direction: column;
+            align-content: center;
+            align-items: flex-start;
+        }
+        h3{
+            font-size: 20px;
+            font-weight: 700;
+            @media #{$tablet_device}, #{$mobile_device}, #{$mid_device}{
+                font-size: 15px;
+            }
+        }
+        p{
+            color: #000;
+        }
+        span{
+            width: 30px;
+            height: 1px;
+            background: $logo_crimson;
+            margin: 0 20px;
+            @media #{$tablet_device}, #{$mobile_device}{
+                margin:0;
             }
         }
     }
-<<<<<<< Updated upstream
-=======
 }
 
 //FORM ////////////
@@ -219,5 +489,4 @@ textarea{
     position: fixed;
     background: #000000;
     opacity: .7;
->>>>>>> Stashed changes
 }

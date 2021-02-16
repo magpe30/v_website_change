@@ -1,12 +1,6 @@
-/*!
- * SlickNav Responsive Mobile Menu v1.0.10
- * (c) 2016 Josh Cope
- * licensed under MIT
- */
-.slicknav_btn {
+/*.slicknav_btn {
   position: relative;
   display: block;
-  vertical-align: middle;
   float: right;
   padding: 0.438em 0.625em 0.438em 0.625em;
   line-height: 1.125em;
@@ -140,7 +134,7 @@
 
   /*===== mobile menu slicknav =====*/
 
-.mobile_menu {
+/*.mobile_menu {
 	position: absolute;
 	right: 10px;
 	width: 96%;
@@ -171,7 +165,7 @@
 	position: relative;
 	z-index: 99;
 }
-/* .slicknav_menu .slicknav_open .slicknav_icon-bar:nth-child(2) {
+ .slicknav_menu .slicknav_open .slicknav_icon-bar:nth-child(2) {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
@@ -187,7 +181,7 @@
         position: relative;
         top: -1px;
 } */
-.slicknav_menu {
+/*.slicknav_menu {
   margin: 0;
   padding: 0;
 }
