@@ -1,6 +1,14 @@
 .get_in_tauch_area{
     padding-top: 146px;
     padding-bottom: 160px;
+<<<<<<< Updated upstream
+=======
+    background: #FFF;
+    .get_container{
+        display: flex;
+        justify-content: center;
+    }
+>>>>>>> Stashed changes
     @media #{$mobile_device} {
         padding-top: 70px;
         padding-bottom: 70px;
@@ -40,4 +48,51 @@
             }
         }
     }
+<<<<<<< Updated upstream
 }
+=======
+    
+}
+///Gallery with logos of brands strip////
+
+.gallery_section{
+    display:flex;
+    justify-content: center;
+    border-top: 1px solid $font_5;
+    background: #fff;
+    padding: 20px 0;
+    @media #{$mobile_device}{
+        justify-content: flex-start;
+        padding-top: 10px;
+    }
+    .gallery_container{
+        ul{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            @media #{$mobile_device}{
+                display:grid;
+                grid-template-columns: 100px 50px;
+                grid-template-rows: 80px auto 80px; 
+                column-gap: 50px;
+            }
+            li{
+                padding-right: 100px;
+                @media #{$mid_device}, #{$tablet_device}{
+                    padding-right: 10px;
+                }
+                @media #{$mobile_device}{
+                    padding-right: 0;
+                    align-self:center;
+                }
+            }
+            img{
+                width: 150px;
+                @media #{$mobile_device}{
+                    width: 130px;
+                }
+            }
+        }
+    }
+}
+>>>>>>> Stashed changes

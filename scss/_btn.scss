@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .boxed-btn {
 	background: #fff;
 	color: #131313;
@@ -9,6 +10,15 @@
     border: 0;
     border: 1px solid #615CFD;
     // width: 180px;
+=======
+@mixin btn-class {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 15px;
+    margin: 20px 0;
+	font-family: $font1;
+    font-weight: 300;
+>>>>>>> Stashed changes
     text-align: center;
     color: #615CFD !important;
     text-transform: uppercase;
@@ -25,6 +35,7 @@
         width: 220px;
     }
 }
+<<<<<<< Updated upstream
 .boxed-btn3 {
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0181f5+0,5db2ff+100 */
     background: #615CFD;
@@ -46,6 +57,45 @@
         border: 1px solid #615CFD;
         color: #615CFD !important;
         background: transparent ;
+=======
+.template_btn{
+    @include btn-class;
+    color: #000;
+    background: transparent;
+    border: 1px solid #000;
+    font-size: 15px;
+    &:hover{
+        background: rgba(0,0,0, 0.2);
+        color: #000;
+    }
+}
+.template_btn_pink{
+    @include btn-class;
+    color: #fff;
+    background: $logo_pink;
+    font-size: 15px;
+    &:hover{
+        background: transparent;
+        border: 1px solid $logo_pink;
+        color: $logo_pink;
+    }
+}
+.boxed-btn {
+    @include btn-class;
+    color: #FFF;
+    background: #000;
+    font-size: 20px;
+}
+.boxed-btn-pink {
+    @include btn-class;
+    color: #FFF;
+    background: $logo_pink;
+    font-size: 20px;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg) translate3d(0, 0, 0);
+>>>>>>> Stashed changes
     }
     &:focus{
         outline: none;
@@ -147,6 +197,7 @@
         width: 220px;
     }
 }
+<<<<<<< Updated upstream
 .boxed-btn2 {
 	background: transparent;
 	color: #fff;
@@ -204,3 +255,8 @@
         color: #fff;
     }
 }
+=======
+
+
+
+>>>>>>> Stashed changes

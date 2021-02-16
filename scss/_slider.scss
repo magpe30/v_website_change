@@ -5,7 +5,20 @@
     background-image: url(../img/banner/banner2.png);
 }
 .slider_area{
+<<<<<<< Updated upstream
 
+=======
+background: $section_bg;
+    font-family: $font1;
+    color: #FFF;
+    .video_area{
+        
+        @media #{$mobile_device}{
+            padding-top: 50px;
+        }
+    }
+    
+>>>>>>> Stashed changes
     .single_slider{
         position: relative;
         z-index: 0;
@@ -23,6 +36,19 @@
         &.about_banner.overlay::before{
             opacity: .5;
         }
+<<<<<<< Updated upstream
+=======
+        .video-background{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            top: 0;
+            left:0;
+            background-image: none;
+           
+        }
+>>>>>>> Stashed changes
         .slider_text{
             h3{
                 color: #FFF;
@@ -49,6 +75,7 @@
                line-height: 55px;
 
             }
+<<<<<<< Updated upstream
             }
             span{
                 font-size: 30px;
@@ -81,4 +108,53 @@
             }
         }
     } 
+=======
+            
+        }       
+    }
+}
+.video_watch{
+    margin-top: 35px;
+    @media #{$tablet_device}, #{$mid_device}, #{$mobile_device}{
+        margin-top: 3px;
+    }
+    .play_btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            width: 60px;
+            height: 60px;
+            @include border-radius(50%);
+            border: 1.5px solid #FFF;
+            font-size: 14px;
+            text-align: center;
+            line-height: 60px;
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media #{$tablet_device}, #{$mid_device}, #{$mobile_device}{
+                width: 50px;
+                height: 50px;
+                line-height: 30px;
+            }
+            i{
+                color: #FFF;
+                font-size:20px;
+                margin-left: 4px;
+            }
+        }
+    }
+    p{
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 20px;
+        color: #FFF;
+        @media #{$tablet_device}, #{$mid_device}{
+            font-size: 15px;
+        }
+    }
+
+>>>>>>> Stashed changes
 }

@@ -26,6 +26,7 @@ $(document).ready(function() {
 
 $(document).ready(function(){
 
+<<<<<<< Updated upstream
 // mobile_menu
 var menu = $('ul#navigation');
 if(menu.length){
@@ -39,6 +40,20 @@ if(menu.length){
   // $('ul#blog-menu').slicknav({
   //   prependTo: ".blog_menu"
   // });
+=======
+//Toggle between templates
+//div1-instagram, div2-facebook, div3-youtube
+jQuery(function() {
+  jQuery('#showall').click(function() {
+    jQuery('.targetDiv').show();
+  });
+  jQuery('.showSingle').click(function() {
+    jQuery('.targetDiv').hide();
+    jQuery('.div' + $(this).attr('target')).show();
+  });
+});
+
+>>>>>>> Stashed changes
 
 // review-active
 $('.slider_active').owlCarousel({

@@ -5,8 +5,87 @@
     background-size: cover;
     .footer_top{
         padding-top: 100px;
+<<<<<<< Updated upstream
         padding-bottom: 160px;
         background: #1F1F1F;
+=======
+        padding-bottom: 100px;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        .newsletter{
+            display: flex;
+            margin-bottom: 20px;
+            @media #{$tablet_device}, #{$mobile_device}{
+                flex-direction: column;
+            }
+            input{
+                width: 100%;
+                height: 50px;
+                border: none;
+                color: #fff;
+                border-bottom: 1px solid #FFF;
+                background:transparent;
+                padding: 15px 0;
+                margin-left: 30px;
+                &::placeholder{
+                    color: #919191;
+                    font-weight: 400;
+                }
+                &:focus{
+                    outline: none;
+                }
+            }
+            label{
+                color: #FFF;
+                font-size: 25px;
+                font-weight: 400;
+            }
+            .input_div{
+                display: flex;
+                align-items: flex-start;
+                
+                .enter_btn{
+                    position: relative;
+                    bottom: 0;
+                    float: right;
+                    outline:none;
+                    border: none;
+                    cursor: pointer;
+                    background: $logo_blue_dark;
+                    font-weight: 600;
+                    width: 150px;
+                    height: 50px;
+                    border-radius: 15px;
+                    color: #FFF;
+                    &:hover{
+                        background:transparent;
+                        border: 1px solid $logo_blue_dark;
+
+                    }
+                    
+                } 
+            }
+        }
+        .contact_list{
+            font-size: 20px;
+            margin: 0 15px;
+            font-weight: 600;
+            @media #{$mobile_device}{
+                margin: 0 10px;
+                font-size: 15px;
+            }
+            ul{
+                margin-top: 10px;
+            }
+            li{
+                font-size: 15px;
+                font-weight: 300;
+                margin: 5px 0;
+            }
+
+        }
+>>>>>>> Stashed changes
         @media #{$mobile_device} {
             padding-top: 50px;
             padding-bottom: 30px;
@@ -52,7 +131,6 @@
         padding-bottom: 25px;
         background:#1F1F1F;
         .footer_border{
-            padding-bottom: 25px;
             border-top: 1px solid #363636;
         }
         .copy_right{
@@ -76,6 +154,7 @@
             text-align: left;
             margin-top: 30px;
         }
+<<<<<<< Updated upstream
         @media #{$tablet_device} {
             // margin-top: 30px;
             text-align: center;
@@ -105,6 +184,39 @@
                      border: 1px solid #615CFD;
                  }
                 }
+=======
+        .footer_link{
+            color: #8a8a8a;
+            &:hover{
+                color: #FFF;
+            }
+        }
+    }
+    .icons_links{
+        color: #FFF;
+        width: 300px;
+        float: right;
+        @media #{$tablet_device}, #{$mobile_device}{
+            margin: 0 auto;
+            float: none;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        i{
+            color: #FFF;
+            font-size: 20px;
+            margin-right: 15px;
+            background: #23ACBC;
+            border-radius: 50%;
+            padding: 15px;
+            &:hover{
+                color: #23ACBC;
+                border: 1px solid #23ACBC ;
+                background: transparent;
+>>>>>>> Stashed changes
             }
         }
     }

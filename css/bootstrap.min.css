@@ -2060,7 +2060,7 @@ pre code {
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
+    border: none;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
@@ -2598,11 +2598,13 @@ select.form-control-lg:not([size]):not([multiple]) {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
+    border: none;
+    padding: .375rem .90rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: .25rem;
+    border-radius: 50%;
+    background: #000;
+    color: #FFF;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 
@@ -2611,11 +2613,11 @@ select.form-control-lg:not([size]):not([multiple]) {
     text-decoration: none
 }
 
-.btn.focus,
+/*.btn.focus,
 .btn:focus {
     outline: 0;
     box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
-}
+}*/
 
 .btn.disabled,
 .btn:disabled {
@@ -3370,8 +3372,7 @@ tbody.collapse.show {
     list-style: none;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, .15);
-    border-radius: .25rem
+    border-radius: .40rem
 }
 
 .dropup .dropdown-menu {
@@ -3483,7 +3484,7 @@ tbody.collapse.show {
 .dropdown-item:hover {
     color: #16181b;
     text-decoration: none;
-    background-color: #f8f9fa
+    background-color: #f8f9fa;
 }
 
 .dropdown-item.active,

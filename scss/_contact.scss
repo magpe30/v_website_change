@@ -14,8 +14,11 @@
     margin-right: 20px;
 
     i,span{
-      color: #8f9195;
-      font-size: 27px;
+      color: #FFF;
+      font-size: 20px;
+      background: $logo_blue_light;
+      padding: 8px;
+      border-radius: 50%;
     }
   }
 
@@ -25,7 +28,8 @@
       font-size: 16px;
       margin-bottom: 0;
       font-size: 16px;
-      color: #2a2a2a;
+      font-weight: 800;
+      color: #000;
       a{
         &:hover{
           color: $theme-color2;
@@ -44,8 +48,8 @@
 /*=================== contact form start ====================*/
 .contact-title{
   font-size: 27px;
-  font-weight: 600;
-  margin-bottom: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
 }
 
 .form-contact{
@@ -59,7 +63,7 @@
   }
 
   .form-control{
-    border: 1px solid #e5e6e9;
+    border: 1px solid $logo_pink;
     border-radius: 0px;
     height: 48px;
     padding-left: 18px;
@@ -131,7 +135,7 @@
     }
 }
 .contact-section{
-  padding: 130px 0 100px;
+  padding-top: 50px;
   @media #{$tab}{
     padding: 70px 0 40px;
   }
@@ -149,5 +153,10 @@
     }
   }
 }
-
+.contact_img_divider{
+  
+  img{
+    width: 300px;
+  }
+}
 

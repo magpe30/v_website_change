@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .about_area{
     background: #1F1F1F;
     position: relative;
@@ -37,11 +38,33 @@
         }
         @media #{$tablet_device}{
             padding: 100px 0;
+=======
+.about_area {
+    display: flex;
+    padding: 0;
+    color: #000;
+    @media #{$tablet_device}, #{$mid_device}, #{$mobile_device}{
+        flex-direction: column;
+    }
+    .about_info{
+        padding: 120px 120px;
+        @media #{$mobile_device}, #{$tablet_device}, #{$mid_device}{
+            padding: 10px 10px;
+        }
+        h1{
+            font-weight: 900;
+            font-size: 45px;
+            padding-bottom: 20px;
+            @media #{$tablet_device}, #{$mobile_device}{
+                text-align: center;
+            }
+>>>>>>> Stashed changes
         }
         @media #{$mid_device}{
             padding: 100px 0;
         }
     }
+<<<<<<< Updated upstream
     .section_title{
         h3{
             margin-top: 25px;
@@ -66,6 +89,78 @@
             font-size: 18px;
             font-weight: 400;
             margin-bottom: 44px;
+=======
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .left-half {
+        background: $logo_pink;
+        flex: 1;
+        padding: 1rem;
+        @media #{$tablet_device}, #{$mid_device}, #{$mobile_device}{
+            max-width: 100%;
+            min-height: 500px;
+            flex:0;
+        }
+        .about_info{
+            display: flex;
+            flex-direction: column;
+            h1{
+                @media #{$tablet_device}, #{$mid_device}{
+                    font-size: 35px;
+                }
+                @media #{$mobile_device}{
+                    font-size: 30px;
+                } 
+            }
+        }
+        .article_row{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            @media #{$mobile_device}{
+                flex-direction: column;
+                width: 100%;
+            }
+            .article_column{
+                width: 50%;
+                padding: 0 10px;
+                @media #{$mobile_device}{
+                    width: 100%;
+                    text-align: center;
+                    padding: 0 5px;
+                }
+                h2{
+                    font-size: 20px;
+                    font-weight: 700;
+                    padding-top: 10px;
+                    border-top: 1px solid #000;
+                    @media #{$tablet_device}, #{$mid_device}{
+                        font-size: 20px;
+                    }
+                }
+                p{
+                    color: #000;
+                    line-height: 30px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .right-half {
+        background: #FFF;
+        flex: 1;
+        padding: 16px;
+        .img_area{
+            .img1{
+             width: 70%;
+             display: block;
+             margin-left: auto;
+             margin-right: auto;
+            }
+>>>>>>> Stashed changes
         }
     }
 }

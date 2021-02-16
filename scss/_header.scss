@@ -204,4 +204,59 @@
             }
         }
     }
+<<<<<<< Updated upstream
+=======
+}*/
+
+.navbar-scroll{
+    background: #FFF;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    a{
+        color: #000;
+    }
+}
+a{
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: $font1;
+    
+    &:hover{
+        color: $logo_blue_lighter;   
+    }
+}
+.nav-link{
+    color: #fff;
+}
+
+
+.navbar-toggler-icon{
+    color: #000;
+}
+.singup_list{
+    a{
+        width: 100px;
+        display:inline-block;
+        text-align:center;
+    }
+}
+.signup_btn{
+    background: $logo_pink;
+    width: 15px;
+    padding: 9px 0;
+    margin-right: 16px;
+    border-radius: 20px;
+    color: #FFF;
+    &:hover{
+        background: transparent;
+        border: 1.5px solid $logo_pink;
+    }
+>>>>>>> Stashed changes
+}
+
+#main_site_item{
+    color: #000;
+    &:hover{
+        color: $logo_blue_lighter;
+    }
 }
