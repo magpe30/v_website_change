@@ -2,12 +2,12 @@
 .testimonial_area{
     background:#000;
     text-align: center;
-    color: #FFF;
+    color: #fff;
     @media #{$mobile_device}{
         min-height: 460px;
     }
     i{
-        color: $logo_blue_darker;
+        color: $logo_pink;
         font-size: 50px;
         padding-top: 50px;
         @media #{$mobile_device}{
@@ -18,10 +18,10 @@
         padding: 50px 0;
     }
     span{
-        color: #000;
+        color: #fff;
     }
     h1{
-        color: #FFF;
+        color: #fff;
         font-size: 45px;
         font-weight: 900;
         @media #{$mobile_device}{
@@ -34,7 +34,7 @@
         }
     }
     p{
-        color: #FFF;
+        color: #fff;
         @media #{$mobile_device}{
             font-size: 15px;
             padding: 0 10px;

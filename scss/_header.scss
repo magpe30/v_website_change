@@ -227,16 +227,24 @@ a{
 .nav-link{
     color: #fff;
 }
-
+.navbar-nav .nav-link{
+    margin: 5px 0;
+}
 
 .navbar-toggler-icon{
     color: #000;
 }
 .singup_list{
+    display: flex;
+    align-items: center;
+
     a{
-        width: 100px;
+        width: 120px;
         display:inline-block;
         text-align:center;
+    }
+    i{
+        font-size: 25px;
     }
 }
 .signup_btn{

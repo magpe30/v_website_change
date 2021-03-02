@@ -2,11 +2,13 @@
     display: flex;
     padding: 0;
     color: #000;
+    min-height: 600px;
+    
     @media #{$tablet_device}, #{$mid_device}, #{$mobile_device}{
         flex-direction: column;
     }
     .about_info{
-        padding: 120px 120px;
+        
         @media #{$mobile_device}, #{$tablet_device}, #{$mid_device}{
             padding: 10px 10px;
         }
@@ -31,17 +33,21 @@
         justify-content: center;
     }
     .left-half {
-        background: $logo_pink;
+        background: #FFF;
         flex: 1;
-        padding: 1rem;
         @media #{$tablet_device}, #{$mid_device}, #{$mobile_device}{
             max-width: 100%;
-            min-height: 500px;
+            min-height: 400px;
             flex:0;
         }
         .about_info{
             display: flex;
             flex-direction: column;
+            padding-left: 200px;
+            @media #{$tablet_device}, #{$mobile_device}, #{$mid-device}{
+                padding-left: 0;
+                text-align: center;
+            }
             h1{
                 @media #{$tablet_device}, #{$mid_device}{
                     font-size: 35px;
@@ -71,7 +77,6 @@
                     font-size: 20px;
                     font-weight: 700;
                     padding-top: 10px;
-                    border-top: 1px solid #000;
                     @media #{$tablet_device}, #{$mid_device}{
                         font-size: 20px;
                     }
@@ -87,16 +92,135 @@
     .right-half {
         background: #FFF;
         flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
         padding: 16px;
-        .img_area{
-            .img1{
-             width: 70%;
-             display: block;
-             margin-left: auto;
-             margin-right: auto;
+        @media #{$tablet_device}, #{$mobile_device}{
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .animation_img_area{
+            position: relative;
+            margin-left: 120px;
+            @media #{$mid_device}, #{$tablet_device}{
+                margin-bottom: 150px;
+                transform: scale(.8);
+            }    
+            @media #{$mobile_device}{
+                margin-left: 0;
+                margin-right: 50px;
+                margin-bottom: 50px;
+                transform: scale(.6);
             }
         }
+        .food{
+            position: relative;
+            width: 180px;
+            height: 322px;
+            background: url(../img2/food2.jpg);
+            border-radius: 22px;
+            z-index: 2;
+            animation: 4s animaFood infinite;
+            background-position: center;
+            
+            @media (max-width: 767px){
+                transform: translateY(-200px);
+            }
+        
+        }
+        .music{
+            position: absolute;
+            width: 382px;
+            z-index: 3;
+            height: 255px;
+            left: 400px;
+            top: 30px;
+            background: url(../img2/music_shop.jpg);
+            border-radius: 20px;
+            animation: 5s animaMusic infinite;
+        }
+        .travel{
+            position: absolute;
+            width: 379px;
+            height: 194px;
+            background: url(../img2/travel2.jpg);
+            border-radius: 26px;
+            animation: 8s animaTravel infinite;
+        }
+        .phone{
+            position: absolute;
+            width: 500px;
+            height: 400px;
+            animation: 5s animaPhone infinite;
+            background: url(../img2/phone3.png);
+            z-index: 111;
+        }
+        
+    }
+}
+
+///animations
+
+@keyframes animaFood {
+    0%,100%{
+        left: 300px;
+        top: 30px;
+    }
+    50%{
+        left: 280px;
+        top: 110px;
     }
 }
 
 
+@keyframes animaMusic {
+    0%,100%{
+        left: 20px;
+        top:  -2px;
+    }
+    50%{
+        left: 100px;
+        top:  30px;
+    }
+    75%{
+        left: 20px;
+        top:  50px;
+    }
+}
+
+@keyframes animaTravel {
+    0%, 100% {
+        left: 50px;
+        top: 280px;
+    }
+    50% {
+        left: 100px;
+        top: 320px;
+    }
+    75%{
+        left: 200px;
+        top: 350px;
+    }
+
+}
+
+//fixed 
+@keyframes animaPhone {
+    0%{
+        top: 50px;
+        transform: scale(1);
+        left: 0px;
+    }
+
+    50%{
+        top: 80px;
+        transform: scale(.9);
+        transform: rotate(10deg);
+    }
+    100%{
+        top: 50px;
+        transform: scale(1);
+        left: 0px;
+    }
+}

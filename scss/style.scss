@@ -8,21 +8,20 @@ body {
 	overflow: visible;
 }
 //imports 
-@import '_varriable.scss';
+@import '_varriable.scss'; 
 @import '_mixins.scss';
 @import '_extend';
 @import '_responsive.scss';
 @import 'theme-default.scss';
 @import '_btn';
 @import '_slick-nav.scss';
-@import '_slider.scss';
+@import '_slider.scss'; 
 
 
 
-// header
-@import 'header';
-
-// slider
+// header  
+@import 'header';  
+// slider 
 @import 'slider';
 
 // about
@@ -31,8 +30,7 @@ body {
 // counter
 @import 'counter';
 // counter
-@import 'about';
-
+@import 'about'; 
 // templates
 @import '_templates';
 
@@ -61,7 +59,7 @@ body {
 
 @import '_team';
 
-@import 'getIn_tauch';
+@import 'getIn_tauch'; 
 
 @import 'mission';
 

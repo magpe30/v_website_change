@@ -1,9 +1,10 @@
 
 
 .slider_area{
-background: $section_bg;
+background: transparent;
     font-family: $font1;
     color: #FFF;
+    z-index: 2;
     .video_area{
         
         @media #{$mobile_device}{
@@ -19,15 +20,22 @@ background: $section_bg;
         @media #{$tablet_device} {
            // height: 620px;
         }
-        .video-background{
+        #backVideo{
             position: absolute;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            top: 0;
-            left:0;
-            background-image: none;
-           
+            top: 50%;
+            left: 50%;
+            min-height: 100vh;
+            max-width: 100%;
+            transform: translateY(-50%) translateX(-50%);
+            object-fit: cover;
+            object-position: center;
+            z-index: -1;
+            @media #{$mobile_device}{
+               
+            }
+            @supports (object-fit: cover) and (-ms-ime-align:auto) {
+                top: 30%;
+            }
         }
         .slider_text{
             margin-top: 200px;

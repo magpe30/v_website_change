@@ -1,9 +1,10 @@
+
 .our_mission_area{
     padding-top: 100px;
     padding-bottom: 50px;
-    background: linear-gradient(#23ACBC, #6CCCD4);
+    background: #E5FAFA;
     h1{
-        color: #FFF;
+        color: #000;
         font-size: 45px;
         font-weight: 900;
         @media #{$mobile_device}{
@@ -11,7 +12,7 @@
         }
     }
     p{
-        color: #FFF;
+        color: #000;
         font-size: 20px;
         font-weight: 200;
         line-height: 30px;
@@ -24,103 +25,188 @@
         padding-top: 100px;
         padding-bottom: 70px;
     }
-    .row_wrapper{
+    .animation_container{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        @media #{$mobile_device}{
+        justify-content: space-evenly;
+        @media #{$tablet_device}, #{$mobile_device}, #{$mid_device}{
             flex-direction: column;
+            text-align: center;
         }
-        .img_wrapper{
-            @media #{$mobile_device}{
-                display:flex;
-                justify-content: center;
-            }
-            img{
-                @media #{$mobile_device}{
-                    width: 80%;
-                }
-            }
-        }
+    }
 
-        .text_wrapper{
-            padding-left: 25px;
-            @media #{$mobile_device}{
-                padding-top: 20px;
-                text-align: center;
-                padding-left: 0;
-            }
-            button{
-                @media #{$mobile_device}{
-                    margin-top: 0;
-                }
-            }
+    .text_wrapper{
+        
+        margin-right: 150px;
+        @media #{$mobile_device}, #{$tablet_device}, #{$mid-device}{
+            padding-top: 20px;
+            text-align: center;
+            padding-left: 0;
+            margin-right: 5px;
         }
-        .img_wrapper{
-            padding-right: 25px;
+        button{
             @media #{$mobile_device}{
-                padding-right: 0;
+                margin-top: 0;
             }
         }
     }
-    .column_wrapper{
+    .right-half{
+        flex: 1;
         display: flex;
-        justify-content: center;
-        padding-top: 150px;
-        padding-left: 80px;
-        @media #{$mid_device}, #{$tablet_device}, #{$mobile_device}{
-            flex-direction: column;
-            align-content: center;
-            align-items: center;
-            padding-top: 50px;
-            text-align:center;
-            padding-left: 20px;
+        justify-content: flex-start;
+        @media #{$tablet_device}, #{$mid-device}, #{$mobile_device}{
+            margin: 0 auto;
+            text-align: center;
         }
     }
-    .column{
-        padding: 0 20px;
-        @media #{$mid_device}, #{$tablet_device}, #{$mobile_device}{
-            margin-top: 30px;
-        }
-        .second_paragraph{
-           
-            @media #{$mid_device}, #{$tablet_device}, #{$mobile_device}{
-                margin-top: 20px;
-            }
+    .left-half{
+        flex:1;
+        height: 500px;
+        display: flex;
+        justify-content: flex-end;
+        @media #{$tablet_device}, #{$mid_device}, #{$mobile_device}{
+            max-width: 100%;
+            min-height: 500px;
+            flex:0;
+            justify-content: center;
         }
         .img_wrapper{
-            margin-top: 40px;
-            @media #{$mid_device}, #{$tablet_device}, #{$mobile_device}{
-                margin-top: 20px;
+            left: 0;
+            width: 320px;
+            height: 480px;
+            background-image: url("../img2/girl_repo.jpg");
+            background-size: cover;
+            background-position: center;
+            animation: 15s anima infinite ;
+            transform: translateX(70px);
+            @media #{$tablet_device}{
+                left: 5%;
             }
-            .first_img, .second_img{
-                border-radius: 8px;
+            @media #{$mobile_device}{
+                transform: translateX(0px);
+                width: 200px;
+                height: 300px;
+            }
+                
+            h1{
+                animation: 15s animaText infinite ;
+                padding: 20px;
+                font-size: 50px;
+                color:white; 
+            }
+            p{
+                animation: 15s animaText infinite ;
+                background-color: $logo_blue_light;
+                border-radius: 10px;
+                padding: 1rem;
+                position: relative;
+                top: 189px;
+                left: 333px;
+                width: 250px;
+                font-weight: 600;
+                color: #fff;
                 @media #{$mobile_device}{
-                    width: 80%;
+                    left: 50px;
                 }
-            }
-            img{
-                left: 10%;
-            }
-        }
-        #img_padding{
-            padding-top: 30px;
-            @media #{$mid_device}, #{$tablet_device}, #{$mobile_device}{
-                padding-top: 0px;
             }
         }
         
     }
-    button{
-        margin-top: 50px;
-        @media #{$mid_device}, #{$tablet_device}, #{$mobile_device}{
-            margin-top: 30px;
+}
+
+.our_mission_area2{
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media #{$tablet_device}, #{$mid-device}, #{$mobile-device}{
+        flex-direction: column;
+        text-align: center;
+    }
+    .text_container{
+        padding: 0 70px;
+        @media #{$tablet_device}, #{$mid-device}, #{$mobile-device}{
+            padding: 5px 20px;
+        }
+        h1{
+            color: #000;
+            font-size: 45px;
+            font-weight: 900;
+            @media #{$mobile_device}{
+                font-size: 30px;
+            }
+        }
+        p{
+            color: #000;
+            font-size: 20px;
+            font-weight: 200;
+            line-height: 30px;
         }
     }
-    #btn_padding{
-        margin-top:50px;
-        @media #{$mid_device}, #{$tablet_device}, #{$mobile_device}{
-            margin-top: 30px;
+    .img_wrapper{
+        margin-left: 40px;
+        @media #{$tablet_device}, #{$mobile_device}{
+            margin: 0 10px;
         }
+        img{
+            @media #{$tablet_device}, #{$mobile_device}{
+                width: 100%;
+            }
+        }
+    }
+}
+.grey_background{
+    background: $gray-color-2;
+}
+.green_background{
+    background: #E5FAFA;
+}
+.pink_background{
+    background: #FFE4DB;
+}
+.blue_background{
+    background: #D0DEFF;
+}
+
+
+
+//////////ANIMATIONS//////////////////
+@keyframes anima {
+    0%{
+    width: 320px;
+    height: 480px;
+    
+    }
+    5%{
+    transform: translateX(0px);
+    }
+    25%{
+    width: 600px;
+    height: 400px;
+    
+    }
+    85%{
+    width: 600px;
+    height: 400px;
+    transform: translateX(0px);
+    }
+}
+
+@keyframes animaText {
+    0%{
+        opacity: 0;
+    }
+    35%{
+        opacity: 1;
+
+    }
+    75%{
+        opacity: 1;
+    }
+    85%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 0;
     }
 }

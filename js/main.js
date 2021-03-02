@@ -39,7 +39,6 @@ jQuery(function() {
 
 
 
-
 //====================JQUERY FOR PLUGINS ===================/////
 
   
@@ -86,7 +85,78 @@ jQuery(function() {
     // });
   
   // review-active
-  $('.slider_active').owlCarousel({
+  //$('.slider_active').owlCarousel({
+  //  loop:true,
+  //  margin:0,
+  //items:1,
+  //autoplay:true,
+  //navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
+  //  nav:true,
+  //dots:false,
+  //autoplayHoverPause: true,
+  //autoplaySpeed: 800,
+  //  responsive:{
+  //      0:{
+  //          items:1,
+  //          nav:false,
+  //      },
+  //      767:{
+  //          items:1,
+  //          nav:false,
+  //      },
+  //      992:{
+  //          items:1,
+  //          nav:false
+  //      },
+  //      1200:{
+  //          items:1,
+  //          nav:false
+  //      },
+  //      1600:{
+  //          items:1,
+  //          nav:true
+  //      }
+  //  }
+  //});
+  
+  // review-active
+  //$('.purpose_active ').owlCarousel({
+  //  loop:true,
+  //  margin:0,
+  //items:1,
+  //autoplay:true,
+  //navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
+  //  nav:false,
+  //dots:false,
+  //autoplayHoverPause: true,
+  //autoplaySpeed: 600,
+  //  responsive:{
+  //      0:{
+  //          items:1,
+  //          dots:false,
+  //          nav:false,
+  //     },
+  //      767:{
+  //          items:1,
+  //          dots:false,
+  //          nav:false,
+  //      },
+  //      992:{
+  //          items:1,
+  //          nav:false
+  //      },
+  //      1200:{
+  //          items:1,
+  //          nav:false
+  //      },
+  //      1500:{
+  //          items:1
+  //      }
+  //  }
+  //});
+  
+  // review-active
+  /*$('.financial_active').owlCarousel({
     loop:true,
     margin:0,
   items:1,
@@ -96,77 +166,6 @@ jQuery(function() {
   dots:false,
   autoplayHoverPause: true,
   autoplaySpeed: 800,
-    responsive:{
-        0:{
-            items:1,
-            nav:false,
-        },
-        767:{
-            items:1,
-            nav:false,
-        },
-        992:{
-            items:1,
-            nav:false
-        },
-        1200:{
-            items:1,
-            nav:false
-        },
-        1600:{
-            items:1,
-            nav:true
-        }
-    }
-  });
-  
-  // review-active
-  $('.purpose_active ').owlCarousel({
-    loop:true,
-    margin:0,
-  items:1,
-  autoplay:true,
-  navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
-    nav:false,
-  dots:false,
-  autoplayHoverPause: true,
-  autoplaySpeed: 600,
-    responsive:{
-        0:{
-            items:1,
-            dots:false,
-            nav:false,
-        },
-        767:{
-            items:1,
-            dots:false,
-            nav:false,
-        },
-        992:{
-            items:1,
-            nav:false
-        },
-        1200:{
-            items:1,
-            nav:false
-        },
-        1500:{
-            items:1
-        }
-    }
-  });
-  
-  // review-active
-  $('.financial_active').owlCarousel({
-    loop:true,
-    margin:0,
-  items:1,
-  autoplay:true,
-  navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
-    nav:true,
-  dots:false,
-  autoplayHoverPause: true,
-  autoplaySpeed: 800,
   
     responsive:{
         0:{
@@ -187,10 +186,10 @@ jQuery(function() {
             items:1
         }
     }
-  });
+  });*/
   
   // review-active
-  $('.testmonial_active2').owlCarousel({
+  /*$('.testmonial_active2').owlCarousel({
     loop:true,
     margin:0,
   items:1,
@@ -221,7 +220,7 @@ jQuery(function() {
             items:1
         }
     }
-  });
+  });*/
   
   // for filter
     // init Isotope
@@ -305,7 +304,7 @@ jQuery(function() {
     // blog-page
   
     //brand-active
-  $('.brand-active').owlCarousel({
+  /*$('.brand-active').owlCarousel({
     loop:true,
     margin:30,
   items:1,
@@ -327,12 +326,12 @@ jQuery(function() {
             items:7
         }
     }
-  });
+  });*/
   
   // blog-dtails-page
   
     //project-active
-  $('.project-active').owlCarousel({
+  /*$('.project-active').owlCarousel({
     loop:true,
     margin:30,
   items:1,
@@ -363,14 +362,14 @@ jQuery(function() {
             items:2,
         }
     }
-  });
+  });*/
   
-  if (document.getElementById('default-select')) {
+  /*if (document.getElementById('default-select')) {
     $('select').niceSelect();
-  }
+  }*/
   
     //about-pro-active
-  $('.details_active').owlCarousel({
+  /*$('.details_active').owlCarousel({
     loop:true,
     margin:0,
   items:1,
@@ -398,7 +397,7 @@ jQuery(function() {
             items:1,
         }
     }
-  });
+  });*/
   
   });
   
@@ -439,9 +438,37 @@ jQuery(function() {
     wow.init();
   });
   
+//Typing effect 
+const items = [
+  'Instagram Ads',
+  'Facebook Video Ads',
+  'LinkedIn Ads',
+  'Facebook Ads',
+]
+const app = document.getElementById('typing')
+let count = 0 
+let index = 0
+let typingEffect = () => {
+  let text = items[index]
+  if (count < text.length) {
+    setTimeout(() => {
+      app.innerHTML += text[count]
+      count++
+      typingEffect()
+    }, Math.floor(Math.random(10) * 150))
+  } else {
+    count = 0;
+    index = (index + 1 < items.length) ? index + 1 : 0
+    setTimeout(() => {
+      app.innerHTML = ''
+      typingEffect()
+    }, 1500)
+  }
+}
+typingEffect()
   
   
-  //------- Mailchimp js --------//  
+//------- Mailchimp js --------//  
   function mailChimp() {
     $('#mc_embed_signup').find('form').ajaxChimp();
   }

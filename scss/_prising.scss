@@ -45,7 +45,7 @@
     }
 }*/
 .pricing_content_area{
-    background: linear-gradient($logo_blue_darker, $logo_blue_lighter);
+    background: #E5FAFA;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,7 +61,7 @@
             margin-right: 5px;
         }
         h3{
-            color: #FFF;
+            color: #000;
             font-weight: 900;
             font-family: $font1;
             font-size: 45px;
@@ -71,7 +71,7 @@
             }
         }
         p{
-            color: #fff;
+            color: #000;
             font-size: 20px;
             font-weight: 200;
         }

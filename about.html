@@ -4,31 +4,26 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About us | Visionogy</title>
     <meta name="description" content="Visionogy is for professional video automation and minimalist using Artificial Intelligence.Visionogy automates multiple videos in minutes for social media">
     <meta name="keywords" content="video marketing, social ads, video templates, video ads,social media advertising, YouTube video, video automation, Instagram video, video minimalist, video auto-generation, video ads campaign, facebook video ads,youtube marketing, video content, video advertising,social media video">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="icon" href="logo_for_flaticon.ico" type="image/x-icon">
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <!-- Place favicon.ico in the root directory -->
-
     <!-- CSS here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/gijgo.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    
+    <!--<link rel="stylesheet" href="css/themify-icons.css">-->
+    <!--<link rel="stylesheet" href="css/gijgo.css">-->
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     
-    <!--<link rel="stylesheet" href="css/slick.css">-->
-    <!--<link rel="stylesheet" href="css/slicknav.css">-->
-    <link rel="stylesheet" href="scss/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-514404-5"></script>
@@ -39,18 +34,15 @@
 
     gtag('config', 'UA-514404-5');
     </script>
-    <script>
-        (function () {
-          var s = document.createElement('script');
-          s.type = 'text/javascript';
-          s.async = true;
-          s.src = 'https://app.termly.io/embed.min.js';
-          s.id = '360764dd-8fd1-4c34-92f6-101510ab051a';
-          s.setAttribute("data-name", "termly-embed-banner");
-          var x = document.getElementsByTagName('script')[0];
-          x.parentNode.insertBefore(s, x);
-        })();
-      </script>
+    <!-- Cookie Consent by https://www.TermsFeed.com -->
+    <script type="text/javascript" src="//www.termsfeed.com/public/cookie-consent/3.1.0/cookie-consent.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+        cookieconsent.run({"notice_banner_type":"headline","consent_type":"express","palette":"light","language":"en","website_name":"Visionogy"});
+        });
+    </script>
+    <noscript>Cookie Consent by <a href="https://www.TermsFeed.com/" rel="nofollow noopener">TermsFeed</a></noscript>
+    <!-- End Cookie Consent -->
 </head>
 
 <body>
@@ -65,9 +57,12 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
             </button>
-                  
+                                  
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="main_site_item" href="index.html">Home</a>
+                    </li>
                     <li class="nav-item active">
                         <a class="nav-link" id="main_site_item" href="templates.html">Templates <span class="sr-only">(current)</span></a>
                     </li>
@@ -75,7 +70,7 @@
                         <a class="nav-link" id="main_site_item" href="pricing.html">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="main_site_item" href="products.html">Products</a>
+                        <a class="nav-link"  id="main_site_item" href="products.html">Products</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="main_site_item" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -87,20 +82,20 @@
                             <a class="nav-link dropdown-item" id="main_site_item" href="contact.html">Contact</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="main_site_item" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Language
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" id="main_site_item" href="https://visionogy.com">English</a>
-                            <a class="dropdown-item" id="main_site_item" href="https://visionogy.com/cn">中文</a>
-                        </div>
-                    </li>
-                       
+                                       
                 </ul>
                 <div class=" my-2 my-lg-0 singup_list">
-                    <a href="http://appd.visionogy.com" target="_black" class="active">Login</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://appd.visionogy.com" id="main_site_item" target="_black" class="active">Login</a>&nbsp;&nbsp;&nbsp;&nbsp;
                     <a class="active signup_btn" target="_blank" href="http://appd.visionogy.com/en/registration">Sign up</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="main_site_item"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="nav-link dropdown-item" id="main_site_item" href="https://visionogy.com">English</a>
+                            <a class="nav-link dropdown-item" id="main_site_item" href="https://cn.visionogy.com">中文</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -143,6 +138,12 @@
                     <div class="single_mission_aboutUs">
                         <p class=" animated wow fadeInRight" data-wow-duration="1s" data-wow-delay=".2s">Our team has 20 years experience in image, video, AI, media and design. We combine NLP and ML to create powerful brand presence and drive conversions. We combine technology with experience design, human behaviour and storytelling. We are technology with the vision! 
                         </p>
+                        <div class="read_story">
+                            <p>Read our story</p>
+                            <div class="read_icon">
+                                <button onClick="window.open('https://www.jbs.cam.ac.uk/insight/2020/venturing-forth-visionogy/')"><i class="fas fa-arrow-right read"></i></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div >
@@ -195,104 +196,47 @@
             </div>
         </div>
     </div>
-       
-
-    <!-- <div class="how_we_work_area extra_margin">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="work_info">
-                        <div class="section_title">
-                            <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">How we work</h3>
-                            <p class="mid_text wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">“Function information without cross action media value.</p>
-                            <p class="last_p wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">Efficiently unleash cross-media tour function information without cross action media value. Quickly maximize timely deliverables for real-time schemas.</p>
-                        </div>
-                        <div class="video_watch d-flex align-items-center">
-                            <div class="play_btn wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                                <a href="https://www.youtube.com/watch?v=D7tF-cY2M9o" class="video_icon popup-video"> <i class="fa fa-play"></i> </a>
-                            </div>
-                           <span class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".7s"> Watch Video</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
 <!-- blog_area_start -->
-<div class="blog_area " >
-    <div class="container " >
-        <div class="row justify-content-center ">
-            <div class="col-lg-10 blog_section">
-                <div class="blog_title text-center">
-                    <h1 class="animated wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Founders</h1>
-                    <p class="animated wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Meet our passionate and talented team.</p>
+    <div class="blog_area " >
+        <div class="container " >
+            <div class="row justify-content-center ">
+                <div class="col-lg-10 blog_section">
+                    <div class="blog_title text-center">
+                        <h1 class="animated wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Our Values</h1>
+                    </div>
+                   
                 </div>
-               
             </div>
-        </div>
-        <!--<div class="row justify-content-center ">
-            <div class="col-lg-12 posts_section">
-                <div class="single_blog">
-                    <img src="https://miro.medium.com/max/700/1*miPlvUyVtsckuQcQctKWmQ.jpeg" alt="blog post">
-                    <a href="https://visionogy.medium.com/b2b-market-segmentation-and-the-possible-data-variables-c24ff0b59785">
-                        B2B Market Segmentation and the possible Data Variables
-                    </a>
-                </div>
-                <div class="single_blog">
-                    <img src="https://miro.medium.com/max/700/1*sd649_of2ydPZdDgLZVn8g.jpeg" alt="blog post">
-                    <a href="https://visionogy.medium.com/ai-meets-video-marketing-5b4deb344e4c">
-                        AI meets Video Marketing
-                    </a>
-                </div>
-                <div class="single_blog">
-                    <img src="https://miro.medium.com/max/700/1*vtVoM4amiBQ4bUxEXDAGnw.jpeg" alt="blog post">
-                    <a href="https://visionogy.medium.com/automated-video-batching-can-help-smes-and-start-ups-with-digital-marketing-content-91634610793d">
-                        Automated Video batching can help SMEs and start-ups with digital marketing content!
-                    </a>
-                </div>
-                <div class="single_blog">
-                    <img src="https://miro.medium.com/max/700/1*V07a40tx6Zc0ytO0-nI54g.jpeg" alt="blog post">
-                    <a href="https://visionogy.medium.com/minimalize-video-ads-no-longer-a-nicety-but-a-necessity-8f0e20bb221e">
-                        Minimalize video ads: No longer a Nicety but a Necessity
-
-                    </a>
-                </div>
-               
+            <div class="row justify-content-between founders">
+                    <div class="single_founder green_background text-center">
+                        <div class="founder_img_wrapper">
+                            <i class="fas fa-poll green_background"></i>
+                        </div>
+                        <h3>We know marketing</h3>
+                        <span></span>
+                        <p>We know ins and outs of how to help you throughout your digital journey.</p>
+                    </div>
+                    <div class="single_founder blue_background text-center">
+                        <div class="founder_img_wrapper">
+                            <i class="fas fa-brain blue_background"></i>
+                        </div>
+                        <h3>Passion for technology</h3>
+                        <span></span>
+                        <p>Technology is the core of what we do and we have a commitment to continuous improvement.</p>
+                    </div>
+                    <div class="single_founder pink_background text-center">
+                        <div class="founder_img_wrapper">
+                            <i class="fas fa-users pink_background"></i>
+                        </div>
+                        <h3>Talk to users</h3>
+                        <span></span>
+                        <p>Relationships with our users are central to how and why we work.</p>
+                    </div>
             </div>
-            <a class="boxed-btn blog_btn" href="https://visionogy.medium.com/">Read more</a>
-        </div>-->
-        <div class="row justify-content-between founders">
-                <div class="single_founder">
-                    <div class="founder_img_wrapper">
-                        <img src="img/team/founder.png" alt="founder picture">
-                    </div>
-                    <h3>Yingbo Li</h3>
-                    <h4>CEO</h4>
-                    <span></span>
-                    <p>Yingbo has the academic background of computer science and AI, and the industrial background of startup.</p>
-                </div>
-                <div class="single_founder">
-                    <div class="founder_img_wrapper">
-                        <img src="img/team/founder1.png" alt="founder picture">
-                    </div>
-                    <h3>Anne Spulber</h3>
-                    <h4>COO</h4>
-                    <span></span>
-                    <p>Anne is passionate about building scalable applications. She thrives at the cutting edge of AI technologies and design.</p>
-                </div>
-                <div class="single_founder">
-                    <div class="founder_img_wrapper">
-                        <img src="img/team/founder3.png" alt="founder picture">
-                    </div>
-                    <h3>Yingjung Guan</h3>
-                    <h4>CBO</h4>
-                    <span></span>
-                    <p>Yingjung is passionate about building powerful products with a focus on innovative tech products.</p>
-                </div>
         </div>
     </div>
-</div>
+    
 
 <!--/ blog_area_end -->
 <!--/ Values area starts-->
@@ -304,7 +248,7 @@
         <div class="values_text">
             <h1 class=" animated wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">The easiest way to create videos</h1>
             <p>Our video builder is easy to use and powerful. Get started. Try it for free</p>
-            <a class="boxed-btn" href="">Sign up</a> 
+            <a class="boxed-btn" href="http://appd.visionogy.com/en/registration/">Sign up</a> 
         </div>
     </div>
 </div>
@@ -357,8 +301,6 @@
                             <a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s" href="http://appd.visionogy.com/en/miniplat">Contact Us</a>   
                             <ul>
                                 <li class="footer_link">info@visionogy.com</li>
-                                <li class="footer_link">+44(0)2070609799(UK)</li>
-                                <li class="footer_link">+359 (0)2 9811708(BG)</li>
                             </ul>
                         </div>
                                
@@ -397,8 +339,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/ajax-form.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
@@ -406,12 +346,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/scrollIt.js"></script>
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
     <script src="js/jquery.slicknav.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/gijgo.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <!--<script async src="js/gijgo.min.js"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>-->
 
     <!--contact js-->
     <script src="js/contact.js"></script>
@@ -421,6 +360,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/mail-script.js"></script>
 
     <script src="js/main.js"></script>
+    <!--<script src="js/owl.carousel.min.js"></script>-->
+    <script src="js/isotope.pkgd.min.js"></script>
 </body>
 
 </html>
